@@ -24,7 +24,7 @@ class Parser(APIView):
         
         return HttpResponse("ok")
     
-class DataInserting(APIView):
+class AdditionalInfo(APIView):
     def post(self,request):
         serializer = FileSerializer(data=request.data)
         serializer2 = AdditionalSerializer(data=request.data)
