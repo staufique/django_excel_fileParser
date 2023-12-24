@@ -1,0 +1,77 @@
+{
+	"info": {
+		"_postman_id": "7d49ecec-0d12-4c1c-969c-e872970fce7d",
+		"name": "django-file parser",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30181095"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8000/file/parsing-file/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/Maqsood/Desktop/django-file-parser/fileparser/data.xlsx"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/file/parsing-file/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"file",
+						"parsing-file",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/file/additional-info/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"shaikh\",\r\n    \"age\":\"24\",\r\n    \"roll_no\":\"110\",\r\n    \"mobile_no\":\"9594\",\r\n    \"email\":\"test@gmail.com\",\r\n    \"city\":\"mum\",\r\n    \"state\":\"maha\",\r\n    \"fathers_name\":\"new\",\r\n    \"f_mobile\":\"9819\",\r\n    \"f_email\":\"f@gamil.com\",\r\n    \"f_age\":45\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/file/additional-info/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"file",
+						"additional-info",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
